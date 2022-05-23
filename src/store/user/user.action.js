@@ -28,3 +28,6 @@ export const signUpStart = (email, password, displayName) =>
     password,
     displayName,
   });
+
+export const signUpSuccess = (user, additionalDetails) =>
+  createAction(USER_ACTION_TYPES.SIGN_UP_SUCCESS, { user, additionalDetails });
